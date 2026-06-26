@@ -1,18 +1,14 @@
 const skills = [
 {
-    title:"熊谷 夏月",
     image:"images/kumagai.jpg"
 },
 {
-    title:"酒井 拓己",
     image:"images/sakai.jpg"
 },
 {
-    title:"藤間 勇行",
     image:"images/fujima.jpg"
 },
 {
-    title:"岩井 美樹",
     image:"images/iwai.jpg"
 }
 ];
@@ -43,7 +39,6 @@ function gacha(){
         const skill = skills[random];
 
         card.innerHTML = `
-            <h2>${skill.title}</h2>
             <img src="${skill.image}" class="profile-image">
         `;
 
@@ -69,7 +64,6 @@ function gacha(){
             const finalSkill = skills[finalRandom];
 
             card.innerHTML = `
-                <h2>${finalSkill.title}</h2>
                 <img src="${finalSkill.image}" class="profile-image">
             `;
 
